@@ -1,0 +1,142 @@
+.bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.container {
+  margin-top: 70px;
+  width: 682px;
+  padding-bottom: 50px;
+  flex-shrink: 0;
+  border-radius: 15px;
+  border: 1px solid #fc8687;
+  background: rgba(255, 255, 255, 0.22);
+  margin-bottom: 70px;
+}
+.texts {
+  margin-top: 40px;
+  color: #000;
+  text-align: center;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.heading {
+  margin-top: 7%;
+  color: #000;
+  text-align: center;
+  font-size: 36.6px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.description {
+  color: #ff5152;
+  text-align: center;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.tagContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3열로 배열 */
+  gap: 15px 10px; /* 세로와 가로 간격 조절 */
+  padding: 20px;
+  max-width: 600px; /* 원하는 너비 설정 */
+  margin: auto; /* 중앙 정렬 */
+}
+
+.tagContainer2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 15px 10px; /* 세로와 가로 간격 조절 */
+  padding: 20px;
+  max-width: 600px; /* 원하는 너비 설정 */
+  margin: auto; /* 중앙 정렬 */
+}
+
+.tag {
+  padding: 8px 12px;
+  border: 1px solid #ff5152; /* 테두리 색 */
+  border-radius: 20px;
+  font-size: 11px;
+  color: #ff5152; /* 글자 색 */
+  background-color: white;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.tag:hover {
+  background-color: #ff8686;
+  color: white;
+}
+
+.selectedTag {
+  background-color: #ff8686; /* 선택된 태그의 배경색 */
+  color: white; /* 선택된 태그의 텍스트 색상 */
+  border: none;
+}
+
+.closeButton {
+  margin-left: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+  transform: translateY(-50%);
+}
+
+.hoverImageContainer {
+  position: absolute; /* 부모 요소에서 절대 위치 */
+  display: flex;
+  transform: translateY(0); /* 이미지가 위로 올라오도록 설정 */
+  opacity: 0; /* 초기 상태에서 숨김 */
+  transition: opacity 0.3s ease-in-out;
+  z-index: 10; /* 다른 요소 위에 표시 */
+  width: 680px;
+}
+
+.hoverImageContainer.show {
+  opacity: 1;
+}
+.hoverImage {
+  width: 100%;
+  border-radius: 10px;
+}
+.textcontainer {
+  padding-top: 30px;
+  display: flex;
+  justify-content: center; /* 가로 방향 가운데 정렬 */
+}
+.textarea {
+  justify-content: center;
+  width: 90%;
+  height: 200px;
+  padding: 10px;
+  font-size: 12px;
+  border: 1px solid #ff8686;
+  border-radius: 8px;
+  resize: vertical;
+  color: #727272;
+}
+.buttoncontainer {
+  padding-top: 30px;
+  display: flex;
+  justify-content: center; /* 가로 방향 가운데 정렬 */
+}
+
+.button {
+  width: 250px;
+  height: 45px;
+  font-size: 21px;
+  border-radius: 13px;
+}

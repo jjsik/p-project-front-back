@@ -1,0 +1,150 @@
+.container {
+  display: block;
+  margin: 60px auto;
+  padding-bottom: 250px;
+  border-radius: 15px;
+  border: 2px solid #ff515285;
+  background-color: hsla(360, 100%, 66%, 0.22);
+  width: 682px;
+  height: 800px;
+  opacity: 1;
+}
+
+.texts {
+  display: flex;
+  flex: 1 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading {
+  width: 600.24px;
+  height: 61px;
+  font-size: 36.6px;
+  font-weight: 700;
+  line-height: 44.29px;
+  text-align: center;
+  font-family: Inter;
+  color: #ff5152;
+  padding: 50px;
+  margin: 35px;
+  white-space: nowrap;
+}
+
+.heading p {
+  font-size: 18.3px;
+  line-height: 22.15px;
+}
+
+.description {
+  margin: 15px 0 15px 0;
+
+  width: 651px;
+  color: #000000;
+  font-size: 25px; /* 기존 폰트 크기 유지 */
+  font-weight: bold;
+  line-height: normal;
+  font-family: Inter;
+  text-align: center;
+}
+
+.subDescription {
+  margin: 15px 0 15px 0;
+  font-size: 15px; /* 서브 설명에 대한 폰트 크기 */
+  line-height: 18.15px;
+  text-align: center; /* 왼쪽 정렬 */
+}
+
+.ending {
+  width: 285px;
+  height: 21px;
+  display: flex;
+  align-items: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: center;
+  color: #ff5152;
+  white-space: nowrap;
+}
+
+.figure {
+  position: absolute;
+  display: flex;
+  padding-left: 800px;
+  z-index: -1;
+}
+
+.figure img {
+  width: 418px;
+  border-radius: 1104.478px;
+  border: 2px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.button {
+  width: 250px;
+  height: 50px;
+  border-radius: 15px;
+}
+
+.checkboxLabel {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox {
+  margin-left: 10px;
+  width: 30px;
+  height: 30px;
+  appearance: none;
+  border: 2px solid #ff5152;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+}
+
+.checkbox:checked::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 8px;
+  width: 6px;
+  height: 12px;
+  border: solid #ff5152;
+  border-width: 0 5px 5px 0;
+  transform: rotate(45deg);
+}
+
+.startButton {
+  margin-top: 30px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 15px;
+  background: #ffb1b2;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: #000000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+@media (max-width: 840px) {
+  .container {
+    flex-direction: column-reverse;
+    margin: 60px auto 226px;
+  }
+
+  .texts {
+    margin-right: 0;
+  }
+
+  .figure {
+    margin-bottom: 40px;
+  }
+}

@@ -1,0 +1,168 @@
+.bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 20px;
+  left: 0;
+  z-index: -1;
+}
+
+.container {
+  display: block;
+  margin: 3px auto;
+  opacity: 1;
+  padding: 48px 80px 48px 80px;
+  gap: 32px;
+}
+
+.texts {
+  display: flex;
+  flex: 1 1;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.heading {
+  font-family: Inter;
+  font-size: 45px;
+  font-weight: 700;
+  text-align: center;
+  color: #ff5152;
+}
+
+.description {
+  color: #ff5152;
+  font-family: Inter;
+  font-size: 40px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.hashtag {
+  color: #000000;
+  font-family: Inter;
+  font-size: 55px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 0 20px 0;
+}
+
+.figure {
+  display: flex;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.figure img {
+  width: 384.75px;
+  height: 513px;
+  top: 233px;
+  left: 528px;
+  border-radius: 9.62px;
+}
+
+.stylerecommendation {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.stylerecommendationDetail {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border: 2.5px solid #727272;
+}
+
+.recommendationHeader {
+  font-family: Holtwood One SC;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 65.1px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #000000;
+}
+
+.subHeader {
+  /* 클래스 이름 수정 */
+  font-family: Inter;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 48.41px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #000000;
+}
+
+.stylerecommendationIcon {
+  width: 257.8px;
+  height: 270px;
+}
+
+.imageGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 3열로 배열 */
+  gap: 10px;
+  justify-items: center;
+}
+
+.imageGrid img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.buttons {
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.saveButton,
+.shareButton {
+  width: 500px;
+  margin: 0 5px 0 5px;
+  border-radius: 22.5px;
+  border: none;
+  background: #ff51524a;
+  font-family: Inter;
+  font-size: 20.5px;
+  font-weight: 700;
+  color: #ff5152;
+  box-shadow: -1px 0px #ff51524a, 0px 1px #ff51524a, 1px 0px #ff51524a,
+    0px -1px #ff51524a, 0px 8px 4px rgba(0, 0, 0, 0.25);
+  display: flex; /* Flexbox 사용 */
+  align-items: center; /* 수직 중앙 정렬 */
+  justify-content: center;
+  padding: 15px;
+}
+
+.buttonIcon {
+  margin-right: 10px; /* 이미지와 텍스트 사이의 간격 */
+  width: 40px; /* 이미지 크기 조정 */
+  height: auto; /* 비율 유지 */
+}
+
+.saveButton:hover,
+.shareButton:hover {
+  background-color: #ff8686;
+}
+
+@media (max-width: 840px) {
+  .container {
+    flex-direction: column-reverse;
+    margin: 60px auto 226px;
+  }
+
+  .text {
+    margin-right: 0;
+  }
+
+  .figure {
+    margin-bottom: 40px;
+  }
+}

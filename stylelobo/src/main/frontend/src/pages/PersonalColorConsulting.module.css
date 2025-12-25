@@ -1,0 +1,54 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  border: 2px solid #dadada;
+  background-color: #dadada;
+  width: 600px;
+  height: 800px;
+  opacity: 1;
+}
+
+.figure {
+  display: block;
+}
+
+.button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.uploadButton {
+  margin-top: 30px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 15px;
+  background: #ffb1b2;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: #ff5152;
+  text-align: center;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.aiconsultingButton {
+  margin-top: 30px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 15px;
+  background: #ffb1b2;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: #ff5152;
+  text-align: center;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}

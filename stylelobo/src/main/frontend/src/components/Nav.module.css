@@ -1,0 +1,81 @@
+.nav {
+  font-family: Holtwood One SC;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  padding: 15px 0;
+  z-index: 1000;
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: var(--box-shadow);
+}
+
+p.title {
+  font-size: 35px;
+  font-weight: 400;
+  text-align: left;
+  color: black;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ul.menu {
+  display: contents;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 832px;
+  height: 59px;
+  left: 307px;
+  font-size: 18px;
+}
+
+ul.menu a {
+  color: #ff5152;
+  text-decoration: none;
+  position: relative;
+  padding: 0px 12px;
+}
+
+ul.menu a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 4px;
+  background: #ff5152;
+  transition: all 0.5s ease-out;
+}
+
+ul.menu a:hover::after {
+  width: 100%;
+  background: #ff5152;
+}
+
+ul.menu > li:last-child {
+  margin-right: 0;
+}
+
+ul.menu a:hover,
+ul.menu a:active {
+  text-decoration: none;
+}
+
+ul.menu p.title > a {
+  color: black;
+  text-decoration: none;
+}
+
+ul.menu p.title > a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+ul.menu p.title > a::after {
+  content: none;
+}

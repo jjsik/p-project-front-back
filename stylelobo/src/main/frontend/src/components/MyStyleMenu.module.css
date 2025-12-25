@@ -1,0 +1,35 @@
+.MyStyleMenu {
+  position: relative;
+  display: inline-block;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+}
+
+ul.popup {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+}
+
+ul.popup .item {
+  margin: 8px;
+  color: #000000;
+  background-color: transparent;
+  transition: background-color 0.3s;
+  white-space: nowrap;
+}
+
+ul.popup .item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  color: #ff5152;
+  font-weight: bold;
+}

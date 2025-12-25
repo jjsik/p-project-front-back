@@ -1,0 +1,13 @@
+.Button {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 15px;
+  background: #fdd9d1;
+  color: #ff5152;
+  text-align: center;
+  font-family: Inter;
+  font-size: 25px;
+  font-style: normal;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}

@@ -1,0 +1,6 @@
+<svg width="32" height="29.6" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect x="4" y="4" width="24" height="24" rx="6" fill="none" stroke="#FF6F61" stroke-width="2"/> <!-- 외곽선 -->
+    <circle cx="16" cy="16" r="10" fill="#FF6F61"/> <!-- 얼굴 -->
+    <circle cx="16" cy="16" r="5" fill="#D94E4E"/> <!-- 내부 원 -->
+</svg>
+ 
